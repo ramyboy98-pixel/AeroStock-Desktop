@@ -1,0 +1,25 @@
+{
+  "name": "aerostock-desktop",
+  "version": "1.0.0",
+  "description": "AeroStock Atelier Desktop",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^31.7.7",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.aerostock.desktop",
+    "productName": "AeroStock Atelier",
+    "files": [
+      "main.js",
+      "index.html"
+    ],
+    "win": {
+      "target": "portable"
+    }
+  }
+}
